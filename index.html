@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Registrasi UKM</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-    
+    <div class="logo">
+        <img src="assets/logoits.png" alt="logo" width="100" height="100" />
+    </div>
+    <div class="container">
+        <h1>Form Registrasi UKM</h1>
+
+        <form class="form">
+            <div>
+                <label for="nama-depan">Nama depan : </label>
+                <input type="text" id="nama">
+            </div>
+            <br>
+            <div>
+                <label for="nama-tengah">Nama tengah : </label>
+                <input type="text" id="nama">
+            </div>
+            <br>
+            <div>
+                <label for="nama-belakang">Nama belakang : </label>
+                <input type="text" id="nama">
+            </div>
+            <br>
+            <div>
+                <label for="unit">Unit : </label>
+                <select name="unit">
+                    <option>pilih UKM</option>
+                    <option>Sepak Bola</option>
+                    <option>Golf</option>
+                    <option>Robotika</option>
+                    <option>Tenis</option>
+                    <option>Catur</option>
+                    <option>Panahan</option>
+                    <option>Flag Ball</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="nama-belakang">Gender : </label><br>
+                <input type="radio" name="opsi" value="Laki-laki">Laki-laki<br>
+                <input type="radio" name="opsi" value="Perempuan">Perempuan<br>
+            </div>
+            <br>
+            <label for="no-hp">Nomor hp : +62 </label>
+            <input type="text" id="nomor">
+            <br>
+            <h2>Komentar</h2>
+            <div method="post">
+                <textarea rows="8" cols="40" wrap="physical"name="komentar"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email : </label>
+                <input type="text" id="email">
+            </div>
+            <br>
+            <div>
+                <label for="password">Password : </label>
+                <input type="password" id="password">
+            </div>
+            <br>
+            <div>
+                <label for="password">Ketik ulang password : </label>
+                <input type="password" id="password">
+            </div>
+            <br>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
 </body>
 </html>
